@@ -35,7 +35,8 @@ $ git clone https://github.com/furaidopoteto/WebScanner.git
 $ cd WebScanner
 $ docker-compose up -d --build
 ```
-3. コンテナが立ち上がったら「[http://127.0.0.1:8080](http://127.0.0.1:8080)」にアクセスすることで使用できます。
+3. コンテナが立ち上がったら「[http://127.0.0.1:8080](http://127.0.0.1:8080)」にアクセスすることで使用できます。\
+※phpmyadminの起動に時間がかかる場合があります
  
 # 使用ライブラリ
  このプロジェクトでは、下記ライブラリを使用しております。
