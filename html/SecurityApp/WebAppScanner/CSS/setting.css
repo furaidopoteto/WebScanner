@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+#settingbox{
+    text-align: left;
+    background-color: #e0e0e0;
+    border: solid 1px black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+#leftbox{
+    font-size: 25px;
+    border-right: solid 1px black;
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.leftitems{
+    border-bottom: solid 1px black;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+#rightbox{
+    width: 70%;
+    overflow-y: scroll;
+}
+.leftitems:hover{
+    cursor: pointer;
+    background-color: #bab7b7;
+}
+
+.settingtext, .settinginput{
+    font-size: 30px;
+    margin-left: 10px;
+}
+#settinginfo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+#viewmanualurl, #viewloginpara, #viewcsrftokensetting, #viewsessidsetting{
+    font-size: 30px;
+    display: block;
+    margin-top: 10px;
+}
+
+.viewinputlogin, .inputloginpara{
+    font-size: 30px;
+}
+
+.viewurls, .viewcsrftokens{
+    margin-top: 10px;
+    display: inline-block;
+}
+.viewurls{
+    display: flex;
+    width: 100%;
+    border: solid 1px black;
+}
+.viewurlitem{
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px 0 5px 0;
+}
+.viewremovebutton{
+    height: 100%;
+    width: 8%;
+    display: inline-block;
+    padding: 5px 0 5px 0;
+}
+
+#loadingbg{
+    transition: .5s ease;
+    display: none;
+}
+.popup-bg-cover{
+    display: block !important;
+	position: fixed; /* ブラウザの定位置に固定 */
+	background: rgba(0, 0, 0, .5); /* 背景色を半透明の黒色に */
+	width: 100%; /* 要素の横幅を画面全体に */
+	height: 100%; /* 要素の高さを画面全体に */
+	top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+	left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+	z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
+    pointer-events: none;
+}
+#loadingimgbox{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 250px;
+}
+#loadingjunkaiimg{
+    
+}
+
+.reqdetailbox{
+    white-space: pre-line;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 15px 15px 15px 0;
+    border-radius: 10px;
+    display: none;
+}
+.viewurlitem:hover{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(168, 168, 168);
+    cursor: pointer;
+    opacity: .8;
+}
+.fa-caret-right{
+    font-size: 25px;
+    transition: .5s ease;
+}
+.rotateon{
+    transform: rotate(90deg);
+}
+
+.viewmethod{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    width: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(121, 121, 121);
+}
+
+.helpimages{
+    height: 500px;
+}

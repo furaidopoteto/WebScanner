@@ -1,0 +1,10 @@
+digraph {
+	graph [rankdir=LR]
+	"home.php" -> "login.php"
+	"home.php" -> "yoyaku2.php"
+	"login.php" -> "account.php"
+	"home.php" [image="/home.png"]
+	"login.php" [image="./img/login.png"]
+	"yoyaku2.php" [image="./img/yoyaku2.png"]
+	"account.php" [image="./img/account.png"]
+}

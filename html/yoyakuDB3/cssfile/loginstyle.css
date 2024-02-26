@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    background-image: url("../img/hotelimg1.jpg");
+}
+.box{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(80, 80, 80);
+    opacity: .9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.inputfield{
+    
+}
+#submitbutton, .inputfield{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.title{
+    font-size: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    color: white;
+}
+.abutton{
+    font-size: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+}
+.abutton:hover{
+    color: greenyellow;
+}
+
+.error{
+    color: red;
+    font-size: 25px;
+}
+
+#loginlabel{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+#loginlabel:hover{
+    color: yellowgreen;
+}
+#logincheckbox{
+    height: 30px;
+    width: 30px;
+}

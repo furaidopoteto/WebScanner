@@ -1,0 +1,3 @@
+%0d%0aSet-Cookie:%20HeaderInjectionCookie=123
+%0dSet-Cookie:%2020HeaderInjectionCookie=123
+%0aSet-Cookie:%20HeaderInjectionCookie=123

@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  apache:
+    image: php:7.2-apache
+    volumes:
+      - ./apache/php.ini:/usr/local/etc/php/php.ini
+      - ./html:/var/www/html
+    ports:
+      - 8080:8080
+    build:
+      context: ./apache
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        limits:
+          memory: 5g
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./sql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./db/initdb.d:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=furenntifuraizu
+      - TZ='Asia/Tokyo'
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=furenntifuraizu
+    links:
+      - mysql
+    ports:
+      - 3001:80
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
+  
+
+  selenium:               # selenium container
+    image: selenium/standalone-firefox:4.17.0-20240123 # docker hubのselenium公式イメージ
+    shm_size: 2gb         # ホストとメモリを共有するために設定
+    ports:
+      - 4444:4444         # selenium sever port
+      - 7900:7900         # 実行中のChromeを確認するVNC用port
+    environment:
+      - SE_NODE_SESSION_TIMEOUT=86400     # ブラウザが短時間でタイムアウトしないようにする
+    build:
+      context: ./selenium
+      dockerfile: Dockerfile
+    depends_on:
+      - apache
+      - mysql
+      - phpmyadmin

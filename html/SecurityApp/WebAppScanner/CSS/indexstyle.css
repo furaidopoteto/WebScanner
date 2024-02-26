@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body{
+    background-color: #ffffff;
+}
+#formbox{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    padding: 40px;
+}
+#formbox input, #startbutton{
+    font-size: 30px;
+}
+.inputlabel{
+    width: 70%;
+    text-align: right;
+    display: inline-block;
+}
+
+#attackinfobox{
+    display: none;
+}
+#attackinfobox, .scanviewitembox{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    padding: 40px;
+}
+.scanviewitembox{
+    margin-top: 30px;
+}
+.scanviewitembox:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.scanviewitems{
+    font-size: 20px;
+}
+#infotitle, #percent{
+    font-size: 40px;
+}
+#loadingbox{
+    width: 40%;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 100px;
+}
+#loadingimg{
+    height: 100%;
+    border-radius: 100px;
+}
+
+.alertcntbox{
+    
+}
+.fa-flag{
+    color: red;
+    font-size: 50px;
+}
+#alertcnt{
+    font-size: 50px;
+}
+
+#question, #setting{
+    font-size: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+#question:hover, #setting:hover{
+    color: rgb(0, 108, 196);
+}
+
+#attackurlinfo{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    display: none;
+    border: solid 1px black;
+}
+.urllist{
+    border-bottom: solid 1px black;
+    width: 100%;
+    display: inline-block;
+}
+
+/* 参考: https://hajimete.org/on-off-switch-design-7 */
+.toggle {
+    position: relative;
+    text-align: right;
+    width: 78px;
+    height: 45px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+.toggle input[type=checkbox] {
+    display: none;
+}
+.toggle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #e9e9eb;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+.toggle:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 39px;
+    height: 39px;
+    display: block;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+.toggle.checked:before {
+    background: #35c759;
+}
+.toggle.checked:after {
+    left: 36px;
+    box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.5);
+}
+
+#advancedcheck{
+    display: none;
+}

